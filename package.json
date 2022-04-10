@@ -58,7 +58,7 @@
     "keq": "^1.7.0"
   },
   "description": "Convert swagger path to uri path.(eg. /user/{id} -> /user/:id)",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "directories": {
     "test": "tests"
   },
