@@ -1,5 +1,4 @@
 import { Middleware } from 'keq'
-import * as url from 'url'
 
 
 /**
@@ -8,17 +7,7 @@ import * as url from 'url'
 
 export default function SwaggerPath(): Middleware {
   return async(ctx, next) => {
-    if (ctx.url.pathname) {
-      const urlObj = url.parse(url.format({
-        ...ctx.url,
-        pathname: ctx.url.pathname.replace(/{(.*?)}/g, ':$1'),
-      }), true)
-
-      ctx.url = {
-        ...urlObj,
-        params: ctx.url.params,
-      }
-    }
+    ctx.url.pathname = ctx.url.pathname.replace(/{(.*?)}/g, ':$1'),
 
     await next()
   }

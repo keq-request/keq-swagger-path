@@ -1,15 +1,16 @@
-# keq-swagger-path
+# keq-url-template
 
-[![version](https://img.shields.io/npm/v/keq-swagger-path.svg?style=flat-square)](https://www.npmjs.com/package/keq-swagger-path)
-[![downloads](https://img.shields.io/npm/dm/keq-swagger-path.svg?style=flat-square)](https://www.npmjs.com/package/keq-swagger-path)
-[![license](https://img.shields.io/npm/l/keq-swagger-path.svg?style=flat-square)](https://www.npmjs.com/package/keq-swagger-path)
-[![dependencies](https://img.shields.io/david/keq-request/keq-swagger-path.svg?style=flat-square)](https://www.npmjs.com/package/keq-swagger-path)
+[![version](https://img.shields.io/npm/v/keq-url-template.svg?style=flat-square)](https://www.npmjs.com/package/keq-url-template)
+[![downloads](https://img.shields.io/npm/dm/keq-url-template.svg?style=flat-square)](https://www.npmjs.com/package/keq-url-template)
+[![license](https://img.shields.io/npm/l/keq-url-template.svg?style=flat-square)](https://www.npmjs.com/package/keq-url-template)
+[![dependencies](https://img.shields.io/david/keq-request/keq-swagger-path.svg?style=flat-square)](https://www.npmjs.com/package/keq-url-template)
 [![coveralls](https://img.shields.io/coveralls/github/keq-request/keq-swagger-path.svg?style=flat-square)](https://coveralls.io/github/keq-request/keq-swagger-path)
 
 
 
 <!-- description -->
-Convert swagger path to uri path.(eg. /user/{id} -> /user/:id)
+Convert swagger path to uri path.(eg. /user/{id} -> /user/:id),
+according to the [RFC 6570 URI Template](https://datatracker.ietf.org/doc/rfc6570/)
 <!-- description -->
 
 ## Usage
@@ -29,13 +30,14 @@ request
 ```
 <!-- usage -->
 
-<!-- addition --><!-- addition -->
-
+<!-- addition -->
 ## Sponsor
 
 Support code development on patron.
 
 [![patron](https://c5.patreon.com/external/logo/become_a_patron_button@2x.png)](https://www.patreon.com/bePatron?u=22478507)
+<!-- addition -->
+
 
 ## Contributing & Development
 
