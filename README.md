@@ -18,9 +18,9 @@ according to the [RFC 6570 URI Template](https://datatracker.ietf.org/doc/rfc657
 <!-- usage -->
 ```typescript
 import { request } from 'keq'
-import swaggerPath from 'keq-swagger-path'
+import urlTemplate from 'keq-url-template'
 
-request.use(swaggerPath())
+request.use(urlTemplate())
 
 // Will send request to 'www.example.com/user/1'
 request
